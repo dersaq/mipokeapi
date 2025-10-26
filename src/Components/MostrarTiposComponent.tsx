@@ -1,0 +1,103 @@
+﻿import React from "react";
+import { PokemonTipoComponent } from "./PokemonTipoComponent";
+
+interface Props {
+  ontipoclick: (tipoOriginal: string) => void;
+}
+
+export const MostrarTiposComponent = ({ ontipoclick }: Props) => {
+  return (
+    <div className="tipos-container">
+      <PokemonTipoComponent
+        tipo="fuego"
+        tipoOriginal="fire"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="hielo"
+        tipoOriginal="ice"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="planta"
+        tipoOriginal="grass"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="agua"
+        tipoOriginal="water"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="electrico"
+        tipoOriginal="electric"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="normal"
+        tipoOriginal="normal"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="lucha"
+        tipoOriginal="fighting"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="veneno"
+        tipoOriginal="poison"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="tierra"
+        tipoOriginal="ground"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="volador"
+        tipoOriginal="flying"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="psiquico"
+        tipoOriginal="psychic"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="bicho"
+        tipoOriginal="bug"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="roca"
+        tipoOriginal="rock"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="fantasma"
+        tipoOriginal="ghost"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="dragon"
+        tipoOriginal="dragon"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="siniestro"
+        tipoOriginal="dark"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="acero"
+        tipoOriginal="steel"
+        ontipoclick={ontipoclick}
+      />
+      <PokemonTipoComponent
+        tipo="hada"
+        tipoOriginal="fairy"
+        ontipoclick={ontipoclick}
+      />
+    </div>
+  );
+};
