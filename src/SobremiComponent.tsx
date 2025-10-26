@@ -62,7 +62,7 @@ export const SobremiComponent = () => {
         <h3>David Biedma Mesa Desarrollador web</h3>
         <div className="sobremi-flex">
           <div className="sobremiImage">
-            <img src="/public/img/yop.jpg" alt="David Biedma" />
+            <img src="/mipokeapi/img/yop.jpg" alt="David Biedma" />
           </div>
           <div className="sobremiTexto">
             {loading ? (
