@@ -8,7 +8,7 @@ export const PokemonTipoComponent = (props: Props) => {
         className={`tipo-${tipo} tipo-card`}
         onClick={() => ontipoclick(tipoOriginal)} // ← ¿Está esto?
       >
-        <img src={`/img/tipos/${tipo}.svg`} alt="" />
+        <img src={`${import.meta.env.BASE_URL}img/tipos/${tipo}.svg`} alt="" />
         <h3 className="titulo-tipo">{tipo}</h3>
       </div>
     </div>

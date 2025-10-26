@@ -43,8 +43,8 @@ export const SobremiComponent = () => {
       setLoading(true);
 
       // Obtener dos grupos diferentes de pokémon
-      const topPokemons = await getMultipleRandomPokemons(10);
-      const bottomPokemons = await getMultipleRandomPokemons(10);
+      const topPokemons = await getMultipleRandomPokemons(8);
+      const bottomPokemons = await getMultipleRandomPokemons(8);
 
       setRandomPokemonsTop(topPokemons);
       setRandomPokemonsBottom(bottomPokemons);
@@ -62,7 +62,10 @@ export const SobremiComponent = () => {
         <h3>David Biedma Mesa Desarrollador web</h3>
         <div className="sobremi-flex">
           <div className="sobremiImage">
-            <img src="/mipokeapi/img/yop.jpg" alt="David Biedma" />
+            <img
+              src={`${import.meta.env.BASE_URL}img/yop.jpg`}
+              alt="David Biedma"
+            />
           </div>
           <div className="sobremiTexto">
             {loading ? (
@@ -71,12 +74,15 @@ export const SobremiComponent = () => {
               <>
                 <br />
                 <PokeRandomComponent pokemons={randomPokemonsTop} />
-                ¡Hola! Me llamo david y soy desarrollador web, actualmente me
-                encuentro terminando mi ultimo año de la FP de DAW y esto que
-                estais viendo ahora ha sido mi primer proyectito hecho con React
-                sobre todo para aprender y manejar el tema de utilizar APIs
-                externas, espero que os guste y aprecieis el trabajo que me ha
-                costado hacerla. acepto críticas constructivas via Bizum.
+                <div className="sobremi-texto-block">
+                  ¡Hola! Me llamo david y soy desarrollador web, actualmente me
+                  encuentro terminando mi ultimo año de la FP de DAW y esto que
+                  estais viendo ahora ha sido mi primer proyectito hecho con
+                  React sobre todo para aprender y manejar el tema de utilizar
+                  APIs externas, espero que os guste y aprecieis el trabajo que
+                  me ha costado hacerla. acepto críticas constructivas via
+                  Bizum.
+                </div>
                 <PokeRandomComponent pokemons={randomPokemonsBottom} />
               </>
             )}

@@ -699,13 +699,18 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .sobremi-texto {
+  display: flex;
   width: 80%;
-  font-size: 25px;
+  font-size: 5rem;
+}
+.sobremi-texto-block {
+  font-size: 1.5rem;
 }
 .sobremiImage img {
-  width: 80%;
+  width: 250px;
 }
 /* Buttons - Compactos */
 .btn-guess,
@@ -1120,14 +1125,14 @@ button:focus-visible {
   display: flex;
 }
 .poke-randoms-container img {
-  width: 100px;
+  width: 5rem;
 }
 .poke-randoms-container {
   display: inline-block;
 }
 
 .poke-randoms-container img {
-  width: 100px;
+  width: 150px;
   animation: float 3s ease-in-out infinite;
 }
 
